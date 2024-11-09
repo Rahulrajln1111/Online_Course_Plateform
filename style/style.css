@@ -1,0 +1,46 @@
+body{
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    color: #2E4750;
+    overflow-x: hidden;
+    font-size: 16px;
+
+}
+div{
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    list-style: none;
+    gap:35px;
+    padding: 0;
+}
+
+nav > div > img {
+    width: 30px;
+    height: fit-content;
+    padding: 39px 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: start;
+}
+
+
+h1{
+    font-size: 35px;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+    
+}
+
+
