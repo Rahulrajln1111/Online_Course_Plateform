@@ -10,7 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/Rahulrajln1111/Online_Course_Plateform.git"
   },
+<<<<<<< HEAD
   "author": "Rahul Razz",
+=======
+  "author": "",
+>>>>>>> c58e5b4 (deleting unneccessary files)
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Rahulrajln1111/Online_Course_Plateform/issues"
