@@ -11,11 +11,7 @@
 :root{
     --black : #1b1b1b;
     --white : #f8f8f8;
-<<<<<<< HEAD
-    --blue : #6064ad;
-=======
     --blue : #58a4b0;
->>>>>>> 6bb86f7 (adding sub-courses)
     --grey : #f3f3f3;
     --light-blue : #989cd0;
 }
@@ -159,11 +155,8 @@ nav .btns {
     transition: .6s ease;
 }
 .buttons > a:hover {
-<<<<<<< HEAD
-    background-color:var(--blue);
-=======
+
     background-color:#58a4b0;
->>>>>>> 6bb86f7 (adding sub-courses)
     color: var(--white);
     
 }
@@ -215,11 +208,7 @@ nav .btns {
 }
 
 .main-p2 > a >span{
-<<<<<<< HEAD
-    color: #4e4ad9;
-=======
     color: #58a4b0;
->>>>>>> 6bb86f7 (adding sub-courses)
     font-family: 'SOFIAPROSOFTBOLD' ;
 }
 
@@ -264,11 +253,7 @@ nav .btns {
     width: 700px;
     height: 330px;
     border-radius: 35px 12px;
-<<<<<<< HEAD
-    background-color: var(--blue);
-=======
     background-color: #58A4B0;
->>>>>>> 6bb86f7 (adding sub-courses)
     color: var(--white);
     gap: 15px;
     transition: .6s ease;
@@ -329,11 +314,7 @@ nav .btns {
 }
 
 .card-action > a:hover {
-<<<<<<< HEAD
-    background-color: #989cd0;
-=======
     background-color: #8fc4cc;
->>>>>>> 6bb86f7 (adding sub-courses)
     color: var(--blue);
     border: 1px solid var(--white);
 }
@@ -474,11 +455,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: start;
-<<<<<<< HEAD
-    background-color: var(--blue);
-=======
     background-color: #58a4b0;
->>>>>>> 6bb86f7 (adding sub-courses)
     padding: 100px 0;
 }
 .footer-1{
@@ -499,11 +476,7 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 7px 20px;
-<<<<<<< HEAD
-    background-color: var(--light-blue);
-=======
     background-color: #8fc4cc;
->>>>>>> 6bb86f7 (adding sub-courses)
     border-radius: 5px ;
     line-height: 0;
     font-size: 20px;
@@ -545,11 +518,7 @@ footer{
     padding: 25px;
     width: 450px;
     text-align: center;
-<<<<<<< HEAD
-    background-color: var(--light-blue);
-=======
     background-color: #8fc4cc;
->>>>>>> 6bb86f7 (adding sub-courses)
     border-radius: 12px;
     font-size: 20px;
 }
@@ -558,11 +527,7 @@ footer{
     padding: 10px 12px;
     width: 250px;
     font-size: 20px;
-<<<<<<< HEAD
-    color: #6064ad;
-=======
     color: #58a4b0;
->>>>>>> 6bb86f7 (adding sub-courses)
     border: 1px solid var(--white);
     border-radius: 5px ;
 }
@@ -575,11 +540,8 @@ footer{
 .footer-news-action> button {
     color: var(--white);    
     border: 1px solid var(--white);
-<<<<<<< HEAD
-    background-color: var(--light-blue);
-=======
+
     background-color: #8fc4cc;
->>>>>>> 6bb86f7 (adding sub-courses)
 
     font-size: 20px;
     padding: 10px 20px;
@@ -589,11 +551,7 @@ footer{
 
 }
 .footer-news-action > button:hover{
-<<<<<<< HEAD
-    background-color: var(--blue);
-=======
     background-color: #58a4b0;
->>>>>>> 6bb86f7 (adding sub-courses)
 
 }
 

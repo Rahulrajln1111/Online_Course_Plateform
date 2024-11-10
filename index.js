@@ -19,12 +19,15 @@ app.get("/about-us",function (req,res) {
     
 res.render("about-us",{});
 })
-app.get("/contact",function (req,res) {
+app.get("/courses",function (req,res) {
     
-res.render("contact",{});
+res.render("courses",{});
 })
-app.get("/compose",function (req,res) { 
-res.render("compose");
+app.get("/courses_maths",function (req,res) { 
+res.render("courses_maths");
+})
+app.get("/courses_program",function (req,res) { 
+res.render("courses_program");
 })
 
 
