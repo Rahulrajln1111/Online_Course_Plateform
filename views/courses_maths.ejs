@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/courses.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="img/icon.png">
+
+    <title>CSP-Courses Platform</title>
+</head>
+
+<body>
+
+    <header class="courses-header">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <a href="index">
+                    <h1>CSPCourses</h1>
+                </a>
+            </div>
+            <ul id="dropdown" class="nav-panel">
+
+                <li class="btns">
+                    <a href="register">Log out</a>
+                </li>
+                <li>
+                    <a href="courses">Courses</a>
+                </li>
+                <li>
+                    <a href="articles">Articles</a>
+                </li>
+                <li>
+                    <a href="about-us">About us</a>
+                </li>
+                <li>
+                    <a href="privacypolicy">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="buttons">
+                    <a href="register"><i class="fa-solid fa-right-to-bracket"></i>Log out</a>
+                </li>
+                <li class="navigation">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="categories-background">
+            <div class="categories-wrapper">
+                <div class="categories-container hover-dropdown" id="categories">
+                    <h3>Course categories</h3>
+
+                    <div class="categories">
+                        <a href="courses">CSE Courses</a>
+                        <a href="courses_maths">Mathematics</a>
+                        <a href="courses_program">Programming</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-courses">
+
+        <div class="course-cards">
+
+            <div class="card" id="economics">
+                <img src="img/funany.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Functional Analysis</h2>
+                        <p>This course introduces Functional Analysis, a branch of mathematical analysis that focuses on the study of vector spaces and operators, particularly in infinite-dimensional spaces. Functional analysis is a fundamental subject in modern mathematics, with applications in fields such as quantum mechanics, signal processing, optimization, and differential equations.</p>
+                        <div class="card-action">
+                            <a href="course" class="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="mathematics">
+                <img src="img/linear.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Linear Algebra</h2>
+                        <p>This course provides a comprehensive introduction to Linear Algebra, a fundamental branch of mathematics that focuses on vector spaces, linear transformations, matrices, eigenvalues, and eigenvectors. Linear algebra is a cornerstone of modern mathematics and plays a crucial role in many areas of science and engineering, including computer science, economics, machine learning, physics, and statistics.</p>
+
+                        <div class="card-action">
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="programming">
+                <img src="img/prob.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Probability and Statitics</h2>
+                        <p>This course introduces students to the foundational concepts of probability theory and statistical analysis, providing the mathematical tools needed to model uncertainty and analyze data. The course covers the key principles of probability, random variables, distributions, statistical inference, hypothesis testing, and regression analysis. Students will also explore real-world applications in fields such as business, economics, healthcare, social sciences, and machine learning.</p>
+
+                        <div class="card-action">
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/top.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Topology</h2>
+                        <p>This course provides an introduction to topology, one of the most fundamental branches of modern mathematics. Topology is the study of the properties of space that are preserved under continuous deformations such as stretching, twisting, and bending, but not tearing or gluing. The course covers the key concepts of topological spaces, open and closed sets, continuity, compactness, connectedness, and various topological invariants, as well as their applications in analysis.
+                        </p>
+                        <div class="card-action">
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="courses-footer">
+
+        <div class="footer-1">
+            <div class="footer-logo-cont">
+                <img src="img/logo.png" alt="logo">
+                <h1>CourseCore</h1>
+            </div>
+            <div class="payment-cont">
+                <p>Secure Payment</p>
+                <img src="img/visa-mastercard.png" alt="payment">
+            </div>
+        </div>
+        <div class="footer-2" id="contact-us">
+            <h2>Contact Us</h2>
+            <ul>
+                <a href="#"><i class="fa-solid fa-phone"></i> Tel +1 (98) 102-546-15-12</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> coursecore.support@gmail.com</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> @coursecore</a>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <h2>Useful Newsletter</h2>
+            <p>Let us notify you about new blog articles, new free courses and share useful
+                materials.</p>
+            <form class="footer-news-action">
+                <input type="text" placeholder="Your E-mail...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

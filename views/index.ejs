@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSP-Home_Page</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/interactv.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="img/icon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <a href="index.ejs">
+                    <h1>CSPCourses</h1>
+                </a>
+            </div>
+            <ul id="dropdown" class="nav-panel">
+
+                <li class="btns">
+                    <a href="register">Log in</a>
+                </li>
+                <li>
+                    <a href="courses">Courses</a>
+                </li>
+                <li>
+                    <a href="articles">Articles</a>
+                </li>
+                <li>
+                    <a href="about-us">About us</a>
+                </li>
+                <li>
+                    <a href="privacypolicy">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="buttons">
+                <a href="register"><i class="fa-solid fa-right-to-bracket"></i><%=Log_In%></a>
+                </li>
+                <li class="navigation">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+       <div class="main-container">
+        <div class="main-text">
+            <p class="main-p">Let's learn together with</p>
+            <h1>CSP</h1>
+            <p class="main-p2"><span>Explore Creative Courses</span> to start</p>
+        </div>
+        <div class="main-img">
+            <img src="img/main.jpg" alt="">
+        </div>
+    </div>
+    <div class="search-container">
+        <h1>Search the course you're lookin' for</h1>
+        <div class="search">
+            <div class="search-text">
+                <p>With our advanced search you can quickly find the course you want</p>
+                <div class="search-form">
+                    <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <img src="img/search-img.jpg" alt="">
+        </div>
+    </div>
+        <div class="about-us-container">
+        <div class="about-us-text">
+            <h1>Learn and Grow</h1>
+            <div class="about-us-text-block">
+                <h2>Experience</h2>
+                <p>Learn new knowledge and skills in a variety of ways, from engaging video lectures and dynamic
+                    graphics to data visualizations and interactive elements.</p>
+            </div>
+            <div class="about-us-text-block">
+                <h2>Practice</h2>
+                <p>Demonstrating your knowledge is a critical part of learning. CourseCore courses and programs provide
+                    a space
+                    to practice with quizzes, open response assessments, virtual environments, and more.</p>
+            </div>
+            <div class="about-us-text-block">
+                <h2>Apply</h2>
+                <p>Learning on CourseCore transforms how you think and what you can do, and translates directly into the
+                    real
+                    world—immediately apply your new capabilities in the context of your job.</p>
+            </div>
+        </div>
+        <img src="img/abt-us2.jpg" alt="About us img">
+    </div>
+
+ <footer>
+
+        <div class="footer-1">
+            <div class="footer-logo-cont">
+                <img src="img/logo.png" alt="logo">
+                <h1>CSPCore</h1>
+            </div>
+        </div>
+        <div class="footer-2" id="contact-us">
+            <h2>Contact Us</h2>
+            <ul>
+                <a href="#"><i class="fa-solid fa-phone"></i> phon: +91 9257427665 </a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> sunilkr@iitbhilai.ac.in</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> @sunilkr</a>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <h2>Useful Newsletter</h2>
+            <p>Let us notify you about new blog articles, new free courses and share useful
+                materials.</p>
+            <form class="footer-news-action">
+                <input type="text" placeholder="Your E-mail...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+</body>
+
+</html>
