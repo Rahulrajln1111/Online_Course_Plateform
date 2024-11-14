@@ -1,7 +1,7 @@
 :root {
     --black: #1b1b1b;
     --white: #f8f8f8;
-    --blue: #6064ad;
+    --blue: #58a4b0;
     --grey: #f3f3f3;
     --light-blue: #989cd0;
 }
@@ -161,9 +161,11 @@
 }
 
 .course-main-text {
-    padding: 50px;
-
-    width: 800px;
+   padding: 50px;
+  width: 1032px;
+  background-color: #58a4b0;
+  color: white;
+  border-radius: 30px;
 }
 
 
@@ -180,14 +182,14 @@
     border-radius: 5px;
     font-family: 'SOFIAPROSOFTBOLD';
 
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: white;
+    color: #58a4b0;
     transition: .6s ease;
 }
 
 .course-main-text>a:hover {
-    background-color: var(--light-blue);
-    color: var(--blue);
+    background-color: #90c2ca;
+    color: var(--white);
 }
 
 
@@ -252,4 +254,11 @@
     min-height: 100px;
     overflow: hidden;
     transition: 0.5s ease;
+}
+.diff {
+  border: 2px solid;
+  padding: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
 }
