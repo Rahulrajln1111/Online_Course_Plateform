@@ -34,6 +34,9 @@ res.render("register",{Log_In:name});
 app.get("/course",function (req,res) {
 res.render("course",{Log_In:name});
 });
+app.get("/privacy",function (req,res) {
+res.render("privacy",{Log_In:name});
+});
 app.post('/signup',async (req,res)=>{
    const data={
     name:req.body.pname,
