@@ -24,7 +24,7 @@
             <ul id="dropdown" class="nav-panel">
 
                 <li class="btns">
-                    <a href="register">Log in</a>
+                    <a href="register"><%= Log_In %></a>
                 </li>
                 <li>
                     <a href="courses">Courses</a>
@@ -44,7 +44,7 @@
             </ul>
             <ul>
                 <li class="buttons">
-                <a href="/views/register"><i class="fa-solid fa-right-to-bracket"></i><%=Log_In%></a>
+                <a href="/views/register"><i class="fa-solid fa-right-to-bracket"></i><%= Log_In %></a>
                 </li>
                 <li class="navigation">
                     <span class="line"></span>
@@ -67,17 +67,19 @@
         </div>
     </div>
     <div class="search-container">
+        <form action="/search" method="GET">
         <h1>Search the course you're lookin' for</h1>
         <div class="search">
             <div class="search-text">
                 <p>With our advanced search you can quickly find the course you want</p>
                 <div class="search-form">
-                    <input type="text" placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
+                    <input type="text" id="searchBox" name='q' placeholder="Search..."><i class="fa-solid fa-magnifying-glass"></i>
+                    <button type="submit">Search</button>
                 </div>
             </div>
             <img src="img/search-img.jpg" alt="">
         </div>
+    </form>
     </div>
         <div class="about-us-container">
         <div class="about-us-text">

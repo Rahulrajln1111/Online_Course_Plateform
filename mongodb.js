@@ -32,8 +32,40 @@ const SigUpSchema=new mongoose.Schema({
     required:true
   }
 })
+const courseSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  description: {
+    type: String,
+    required: true,
+    trim: true
+  },
+  category: {
+    type: String,
+    required: true
+  },
+  difficulty: {
+    type: String,
+    enum: ['Beginner', 'Intermediate', 'Advanced'],
+    required: true
+  },
+  duration: {
+    type: Number, 
+    required: true,
+    min: 1
+  },
+  price: {
+    type: Number,
+    required: true,
+    min: 0
+  }
+});
 
+// Export the model
 const collection1=new mongoose.model('collection1',LogInSchema)
 const collection2=new mongoose.model('collection2',SigUpSchema)
-module.exports=collection1
-module.exports=collection2
+const Courses =new mongoose.model('Courses', courseSchema);
+module.exports = { collection1, collection2, Courses };
