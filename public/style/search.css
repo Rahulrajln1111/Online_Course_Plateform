@@ -198,3 +198,18 @@ form button:hover {
     width: 100%;
   }
 }
+
+.buy-now-btn {
+  background-color: #ff5733;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #ff3e2e;
+}

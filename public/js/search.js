@@ -13,3 +13,8 @@ function showCourseDetails(title, description, category, difficulty, price, imag
 function closePopup() {
   document.getElementById('coursePopup').style.display = 'none'; // Hide popup
 }
+function buyNow() {
+  if (window.selectedCourseId) {
+    window.location.href = '/buy-now/' + window.selectedCourseId;
+  }
+}
