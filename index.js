@@ -3,14 +3,25 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const multer = require('multer')
 const posts = [];
 const app = express();
+const path = require('path');
+app.use(express.static("public"));
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const uploadPath = './public/img';
+    cb(null, uploadPath);
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + path.extname(file.originalname)); 
+  }
+});
+const upload = multer({ storage: storage });
 const { collection2, collection1, Courses } = require('./mongodb.js')
 app.use(bodyParser.urlencoded({extended:true}))
 global.name='Log In'
 app.set("view engine","ejs");
-app.use(express.static("public"));
-
 app.get("/",function (req,res) {
 res.render("register",{Log_In:name});
 });
@@ -60,8 +71,7 @@ app.get("/courses",function (req,res) {
     
 res.render("courses",{Log_In:name});
 })
-
-app.post('/Course-add', async (req, res) => {
+app.post('/Course-add',upload.single("courseImage"), async (req, res) => {
   try {
     const data2 = {
       title:req.body.title,
@@ -69,8 +79,11 @@ app.post('/Course-add', async (req, res) => {
       category:req.body.category,
       difficulty:req.body.difficulty,
       duration:req.body.duration,
-      price:req.body.price
+      price:req.body.price,
+      courseimgName:req.file.filename
     };
+    console.log(req.body,req.file)
+
     await Courses.insertMany([data2])
     res.redirect('/admin-add?success=true');
   } catch (error) {

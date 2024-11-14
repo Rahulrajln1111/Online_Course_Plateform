@@ -61,6 +61,10 @@ const courseSchema = new mongoose.Schema({
     type: Number,
     required: true,
     min: 0
+  },
+  courseimgName:{
+    type:String,
+    required:true
   }
 });
 
