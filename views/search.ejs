@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Search Results</title>
+  <link rel="stylesheet" href="style/search.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Course Search</h1>
+      <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Search for a course..." required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+   <button onclick="window.history.back()" class="back-button">Back</button>
+
+  <section class="courses-section">
+    <% if (courses && courses.length > 0) { %>
+      <h2>Search Results:</h2>
+      <div class="course-cards-container">
+        <% courses.forEach(course => { %>
+          <div class="course-card">
+            <% if (course.courseimgName) { %>
+              <img src="img/<%= course.courseimgName %>" alt="<%= course.title %>" class="course-image">
+            <% } %>
+            <div class="course-info">
+              <h3 class="course-title"><%= course.title %></h3>
+              <p class="course-description"><%= course.description %></p>
+              <p class="course-category">Category: <%= course.category %></p>
+              <p class="course-difficulty">Difficulty: <%= course.difficulty %></p>
+              <p class="course-price">Price: $<%= course.price %></p>
+              <button class="view-details-btn" onclick="showCourseDetails('<%= course.title %>', '<%= course.description %>', '<%= course.category %>', '<%= course.difficulty %>', <%= course.price %>, '<%= course.courseimgName %>')">View Details</button>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% } else { %>
+      <p>No courses found.</p>
+    <% } %>
+  </section>
+  <div id="coursePopup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup()">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <img id="popupImage" src="" alt="" class="popup-image">
+      <p><strong>Description:</strong> <span id="popupDescription"></span></p>
+      <p><strong>Category:</strong> <span id="popupCategory"></span></p>
+      <p><strong>Difficulty:</strong> <span id="popupDifficulty"></span></p>
+      <p><strong>Price:</strong> $<span id="popupPrice"></span></p>
+    </div>
+  </div>
+
+  <script src="/js/search.js"></script>
+</body>
+</html>

@@ -95,15 +95,20 @@ app.post('/Course-add',upload.single("courseImage"), async (req, res) => {
 app.get('/search', async (req, res) => {
   try {
     const keyword = req.query.q || '';
-    const query = keyword
-      ? { title: { $regex: keyword, $options: 'i' } }
-      : {};
-
-    const courses = await collection('courses').find(query).toArray();
-    res.json(courses);
+    
+    // Query to find courses where the title or description matches the keyword (case-insensitive)
+    const courses = await Courses.find({
+      $or: [
+        { title: { $regex: keyword, $options: 'i' } },
+        { description: { $regex: keyword, $options: 'i' } }
+      ]
+    });
+    
+    // Render the results in the search view
+    res.render('search', { courses: courses });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ error: 'An error occurred while searching for courses.' });
+    console.error('Error while searching for courses:', error);
+    res.status(500).send('An error occurred while searching for courses.');
   }
 });
 
