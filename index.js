@@ -37,6 +37,9 @@ res.render("course",{Log_In:name});
 app.get("/privacypolicy",function (req,res) {
 res.render("privacypolicy",{Log_In:name});
 });
+app.get("/article",function (req,res) {
+  res.render("article",{});
+  });
 app.post('/signup',async (req,res)=>{
    const data={
     name:req.body.pname,
