@@ -13,10 +13,11 @@ git clone https://github.com/Rahulrajln1111/Online_Course_Plateform.git
 2) Navigate to the project directory:
 cd Online_Course_Plateform
 3) Install dependencies 
-npm install  
-4) Start the development server:
+npm install 
+4) start your mongodb server 
+5) Start the development server:
 npm start  
-5) Open your browser and go to http://localhost:3000.
+6) Open your browser and go to http://localhost:3000.
 
 After opening the site the first to do is to:
 Create an account or log in to access personalized features.
