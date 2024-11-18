@@ -37,8 +37,8 @@ res.render("course",{Log_In:name});
 app.get("/privacypolicy",function (req,res) {
 res.render("privacypolicy",{Log_In:name});
 });
-app.get("/article",function (req,res) {
-  res.render("article",{});
+app.get("/articles",function (req,res) {
+  res.render("article",{Log_In:name});
   });
 app.post('/signup',async (req,res)=>{
    const data={
@@ -53,7 +53,6 @@ res.render('register');
 app.post('/login',async (req,res)=>{
 try{
 const check = await collection2.findOne({email:req.body.email});
-console.log(req.body.email,check.password)
 if(req.body.email==='admin@email'&&check.password===req.body.pass){
     name=check.name
     res.render('admin-add',{Log_In:name})

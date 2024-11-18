@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../public/style/adaptive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" type="text/css" href="style/articles.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
 
     <title>CourseCore Articles</title>
 </head>
@@ -19,26 +21,26 @@
         <nav>
             <div class="logo">
                 <img src="img/logo.png" alt="logo">
-                <a href="index.html">
-                    <h1>CourseCore</h1>
+                <a href="index.ejs">
+                    <h1>CSPCourses</h1>
                 </a>
             </div>
             <ul id="dropdown" class="nav-panel">
 
                 <li class="btns">
-                    <a href="register.html">Log in</a>
+                    <a href="register"><%= Log_In %></a>
                 </li>
                 <li>
-                    <a href="courses.html">Courses</a>
+                    <a href="courses">Courses</a>
                 </li>
                 <li>
-                    <a href="articles.html">Articles</a>
+                    <a href="articles">Articles</a>
                 </li>
                 <li>
-                    <a href="about-us.html">About us</a>
+                    <a href="about-us">About us</a>
                 </li>
                 <li>
-                    <a href="privacypolicy.html">Privacy Policy</a>
+                    <a href="privacypolicy">Privacy Policy</a>
                 </li>
                 <li>
                     <a href="#contact-us">Contact Us</a>
@@ -46,7 +48,7 @@
             </ul>
             <ul>
                 <li class="buttons">
-                    <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i>Log in</a>
+                <a href="register"><i class="fa-solid fa-right-to-bracket"></i><%= Log_In %></a>
                 </li>
                 <li class="navigation">
                     <span class="line"></span>

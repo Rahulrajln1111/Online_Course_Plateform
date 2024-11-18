@@ -32,7 +32,7 @@
               <p class="course-description"><%= course.description %></p>
               <p class="course-category">Category: <%= course.category %></p>
               <p class="course-difficulty">Difficulty: <%= course.difficulty %></p>
-              <p class="course-price">Price: $<%= course.price %></p>
+              <p class="course-price">Price: Rs.<%= course.price %></p>
               <button class="view-details-btn" onclick="showCourseDetails('<%= course.title %>', '<%= course.description %>', '<%= course.category %>', '<%= course.difficulty %>', <%= course.price %>, '<%= course.courseimgName %>')">View Details</button>
             </div>
           </div>
@@ -50,10 +50,8 @@
       <p><strong>Description:</strong> <span id="popupDescription"></span></p>
       <p><strong>Category:</strong> <span id="popupCategory"></span></p>
       <p><strong>Difficulty:</strong> <span id="popupDifficulty"></span></p>
-      <p><strong>Price:</strong> $<span id="popupPrice"></span></p>
-
+      <p><strong>Price:</strong>Rs.<span id="popupPrice"></span></p>
       <button class="buy-now-btn" onclick="buyNow()">Buy Now</button>
-
     </div>
   </div>
 
